@@ -6,7 +6,7 @@ class Song
 
   @@songs = []
 
-  extend Memorable::ClassMethods
+  extend Memorable
 
   def initialize
     @@songs << self
