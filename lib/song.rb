@@ -10,10 +10,6 @@ class Song
   extend Findable
   include Paramable
 
-  def initialize
-    self.class.all << self
-  end
-
   def artist=(artist)
     @artist = artist
   end
