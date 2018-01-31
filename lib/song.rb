@@ -8,11 +8,8 @@ class Song
 
   extend Memorable
   extend Findable
+  extend Initiate
   include Paramable
-
-  def initialize
-    @@songs << self
-  end
 
   def artist=(artist)
     @artist = artist
