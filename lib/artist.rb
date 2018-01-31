@@ -8,6 +8,7 @@ class Artist
 
   extend Memorable
   extend Findable
+  extend Initiate
   include Paramable
 
   def initialize
