@@ -6,6 +6,10 @@ class Song
 
   @@songs = []
 
+  def initialize
+    self.class.all << self
+  end
+
   extend Memorable
   extend Findable
   extend Initiate
