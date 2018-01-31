@@ -11,11 +11,6 @@ class Artist
   extend Initiate
   include Paramable
 
-  def initialize
-    @@artists << self
-    @songs = []
-  end
-
   def self.all
     @@artists
   end
