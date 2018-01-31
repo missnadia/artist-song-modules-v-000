@@ -6,13 +6,13 @@ class Song
 
   @@songs = []
 
-  def initialize
-    self.class.all << self
-  end
-
   extend Memorable
   extend Findable
   include Paramable
+
+  def initialize
+    self.class.all << self
+  end
 
   def artist=(artist)
     @artist = artist
