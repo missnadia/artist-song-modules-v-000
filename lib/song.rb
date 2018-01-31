@@ -12,7 +12,6 @@ class Song
 
   extend Memorable
   extend Findable
-  extend Initiate
   include Paramable
 
   def artist=(artist)
