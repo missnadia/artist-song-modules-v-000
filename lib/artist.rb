@@ -11,6 +11,11 @@ class Artist
   extend Findable
   include Paramable
 
+  def initialize
+    super
+      @songs = []
+  end
+
   def self.all
     @@artists
   end
